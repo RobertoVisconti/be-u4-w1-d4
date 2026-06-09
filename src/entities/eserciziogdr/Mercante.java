@@ -12,8 +12,8 @@ public class Mercante extends Personaggio {
     public Mercante(String nome, int punteggioEnergia, int lv, int ricchezza, int nOggettiPos) {
         super(nome, punteggioEnergia, lv);
 
-        this.ricchezza = random.nextInt(10, 50);
-        this.nOggettiPos = random.nextInt(5, 25);
+        this.ricchezza = ricchezza;
+        this.nOggettiPos = nOggettiPos;
     }
 
     @Override

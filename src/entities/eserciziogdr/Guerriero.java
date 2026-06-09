@@ -15,8 +15,8 @@ public class Guerriero extends Personaggio implements Combattente {
     public Guerriero(String nome, int punteggioEnergia, int lv, int forza, int resistenza) {
         super(nome, punteggioEnergia, lv);
 
-        this.forza = random.nextInt(20, 50);
-        this.resistenza = random.nextInt(5, 20);
+        this.forza = forza;
+        this.resistenza = resistenza;
     }
 
     //metodi

@@ -15,8 +15,8 @@ public class Mago extends Personaggio implements Combattente {
     public Mago(String nome, int punteggioEnergia, int lv, int potereMagico, int mana) {
         super(nome, punteggioEnergia, lv);
 
-        this.potereMagico = random.nextInt(5, 30);
-        this.mana = random.nextInt(5, 15);
+        this.potereMagico = potereMagico;
+        this.mana = mana;
     }
 
     //metodi

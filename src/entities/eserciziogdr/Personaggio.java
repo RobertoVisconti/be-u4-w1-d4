@@ -10,8 +10,8 @@ public abstract class Personaggio {
     //costruttore
     public Personaggio(String nome, int punteggioEnergia, int lv) {
         this.nome = nome;
-        this.punteggioEnergia = Math.abs(punteggioEnergia);
-        this.lv = Math.abs(lv);
+        this.punteggioEnergia = punteggioEnergia;
+        this.lv = lv;
     }
 
     // metodo mostra
@@ -31,5 +31,9 @@ public abstract class Personaggio {
                 ", punteggioEnergia=" + punteggioEnergia +
                 ", lv=" + lv +
                 '}';
+    }
+
+    public String getNome() {
+        return nome;
     }
 }
